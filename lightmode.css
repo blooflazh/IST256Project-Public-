@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+*	lightmode.css
+*	Inverts the HTML elements to make the screen brighter.
+*
+*
+*	Kameron Dangleben
+*	Chris Capaldi
+*	Sam Fisher
+*
+*	IST 411
+*	4/25/21
+*/
+html.lightmode { /* Invert every HTML element for light mode */
+  filter: invert(100%);
+  
+}
+ 
+html.lightmode iframe { /* Makes iframes unaffected by light mode */
+    filter: invert(100%);
+}
+
+html.lightmode input{ /* Makes pictures stay unaffected by light mode */
+	 filter: invert(100%);
+}

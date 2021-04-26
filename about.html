@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+*	about.html
+*	Page which tells the user what the purpose of the site is. Also informs the user about author information.
+*
+*	Kameron Dangleben
+*	Chris Capaldi
+*	Sam Fisher
+*
+*	IST 411
+*	4/25/21
+*/-->
+<html>
+<head>
+   <link href="section_styles.css" rel="stylesheet" />
+  <link href="lightmode.css" rel="stylesheet" />
+  <link href="class_styles.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;"><!-- Set font style -->
+  <h1 align="center"> HTML Arcade </h1><!-- Title -->
+  <section id= "news"><!--News-->
+    <p>Hello! We are proud to announce the grand opening of HTML Arcade!<br><br>
+    The HTML Arcade Team, 4/21/21</p>
+  </section>
+
+  <div style="overflow:auto"><!--Overflow style-->
+  <div class="menu"><!--Vertical Nav. Menu-->
+    <a href="index.html">Home</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+  </div>
+  <div class="main"><!--Main section-->
+    <section id ="game">
+      <h2> What is the HTML Arcade?</h2>
+	  <p> We wanted to recreate the feeling of old flash game websites-in the modern age. With flash being phased out, many of the classic game sites we used to love
+	  no longer function. Here, you can relive some of the early 2000s classics, such as Bloons, Bloons Tower Defense 4, and Age of War. </p>
+	  <br><h2>Our Team</h2>
+	  <p> Kam D. - Web Design<br> Chris C. - Backend<br>Sam F. - Editor/News</p>
+	  <br>
+	  <br>
+	  <p>Questions? Email <a href = "mailto:admin@htmlarcade.com">
+		admin@htmlarcade.com <!--Email Link-->
+		</a></p>
+
+    </div></section>
+    <div class="right">
+      <h2>Theme</h2>
+      <p>Not a fan of dark colors?</p>
+      <input id="lightmode" type="checkbox" onclick="document.documentElement.classList.toggle('lightmode')">
+      <label for="lightmode">Light Mode</label>
+    </div>
+  </div>
+</body>
+
+</html>

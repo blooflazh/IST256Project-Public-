@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+*	index.html
+*	Landing page which will display a random game, OR a queried game depending on if 
+*	one has been chosen.
+*
+*	Kameron Dangleben
+*	Chris Capaldi
+*	Sam Fisher
+*
+*	IST 411
+*	4/25/21
+*/-->
+<html>
+<head>
+    <link href="section_styles.css" rel="stylesheet" /><!-- Stylesheets-->
+  <link href="lightmode.css" rel="stylesheet" />
+  <link href="class_styles.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="gameSelect.js" async></script> <!-- Run game selector asynchronously-->
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+  <h1 align="center"> HTML Arcade </h1> <!--Title-->
+  <section id= "news"><!--News Banner-->
+    <p>Hello! We are proud to announce the grand opening of HTML Arcade!<br><br>
+    The HTML Arcade Team, 4/21/21</p>
+  </section>
+
+  <div style="overflow:auto"><!--Overflow style-->
+  
+  <div class="menu"> <!--Vertical navigation menu-->
+    <a href="index.html">Home</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+  </div>
+  
+  <div class="main"><!--Main center area-->
+    <section id ="game">
+      <h1  align="center"> Featured Game </h1>
+	  <h3><vg></vg></h3>
+
+      <p align="center"><iframe class="frame" width="100%" height="400%" src="" scrolling="no" allowfullscreen></iframe></p><!--Game Frame-->
+      <p><vgd></vgd><br><br></p>
+   </div></section>
+   
+    <div class="right"> <!--Right Menu area-->
+      <h2>Theme</h2>
+      <p>Not a fan of dark colors?</p>
+      <input id="lightmode" type="checkbox" onclick="document.documentElement.classList.toggle('lightmode')"> <!--Night Mode Button, will toggle light mode on click-->
+      <label for="lightmode">Light Mode</label>
+    </div>
+	
+  </div>
+</body>
+
+</html>

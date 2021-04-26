@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*
+*	class_styles.css
+*	Controls "class" elements, .menu, .main, .right
+*
+*
+*	Kameron Dangleben
+*	Chris Capaldi
+*	Sam Fisher
+*
+*	IST 411
+*	4/25/21
+*/
+
+* { /* All elements */
+  box-sizing: border-box;
+}
+.menu { /* Left menu */
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a { /* Menu links */
+  background-color:#26aceb;
+  padding:8px;
+  margin-top:10px;
+  display:block;
+  width:100%;
+  color:white;
+  text-decoration:none;
+}
+.main { /* Center */
+
+color:white;
+  float:left;
+  width:60%;
+  padding:0 2px;
+  
+}
+.right { /* Right menu */
+  color:white;
+  background-color:#383636;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:10px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* MOBILE */
+  .menu, .main, .right {
+    width:100%;
+  }
+  
+
